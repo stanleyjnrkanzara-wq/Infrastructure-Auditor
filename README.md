@@ -2,7 +2,7 @@
 AI-Powered Cloud Infrastructure Security and Cost Auditor Using AWS Lambda, Bedrock and Terraform with GitHub Actions CI/CD
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF9900,100:232F3E&height=120&section=header&text=🏗️%20AI-Powered%20Cloud%20Infrastructure%20Auditor&fontSize=32&fontColor=ffffff&fontAlignY=55" alt="header"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF9900,100:232F3E&height=120&section=header&text=%20AI-Powered%20Cloud%20Infrastructure%20Auditor&fontSize=32&fontColor=ffffff&fontAlignY=55" alt="header"/>
 </p>
 
 <p align="center"><i>A serverless AWS solution that automatically audits cloud infrastructure for security vulnerabilities and cost inefficiencies, powered by Claude 3 Haiku via Amazon Bedrock.</i></p>
