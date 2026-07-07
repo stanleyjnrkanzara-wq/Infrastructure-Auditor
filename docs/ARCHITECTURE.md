@@ -2,7 +2,8 @@
 
 ## System Diagram
 
-![alt text](file:///c%3A/Users/stanl/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/EE236E128CF810F6D131E3935EB74AD60F2A1D26/transfers/2026-27/WhatsApp%20Image%202026-07-07%20at%2022.26.26.jpeg)
+![alt text](<WhatsApp Image 2026-07-07 at 22.26.26-1.jpeg>)
+
 
 ## Component Breakdown
 
@@ -55,7 +56,8 @@
 
 ## Data Flow
 
-![alt text](file:///c%3A/Users/stanl/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/EE236E128CF810F6D131E3935EB74AD60F2A1D26/transfers/2026-27/WhatsApp%20Image%202026-07-07%20at%2023.28.52.jpeg)
+![alt text](22222222222222222222222222222222222222222.jpeg)
+
 
 ## Security Considerations
 
