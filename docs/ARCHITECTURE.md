@@ -1,9 +1,61 @@
-#Architecture Overview
+# Architecture Overview
 
-##System Diagram
+## System Diagram
 
+![alt text](file:///c%3A/Users/stanl/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/EE236E128CF810F6D131E3935EB74AD60F2A1D26/transfers/2026-27/WhatsApp%20Image%202026-07-07%20at%2022.26.26.jpeg)
 
-![alt text](<WhatsApp Image 2026-07-07 at 22.26.26.jpeg>)
+## Component Breakdown
+
+### 1. EventBridge (Trigger)
+- Runs on a schedule: `cron(0 8 * * ? *)` (8 AM UTC daily)
+- Invokes Lambda function automatically
+- Can also be triggered manually via AWS Console or CLI
+
+### 2. Lambda Function
+- **Runtime**: Python 3.11
+- **Timeout**: 60 seconds
+- **Memory**: 128 MB (default)
+- **Execution Role**: `lambda-infrastructure-auditor-role`
+
+**What it does**:
+1. Collects EC2 instance metadata and CPU utilization metrics
+2. Queries CloudWatch for performance data (last 7 days)
+3. Scans security groups for overly permissive rules
+4. Structures data into a natural language prompt
+5. Sends prompt to Claude via Bedrock
+6. Publishes result to SNS topic
+
+### 3. AWS Services Queried
+
+#### EC2 (describe_instances)
+- Gets all running instances
+- Instance type, ID, launch time
+- Tags
+
+#### CloudWatch (get_metric_statistics)
+- CPU utilization metrics
+- 7-day average
+- 1-hour aggregation period
+
+#### EC2 Security Groups (describe_security_groups)
+- Identifies rules with 0.0.0.0/0 CIDR
+- Checks for critical ports (22, 3389, etc.)
+- Severity classification
+
+### 4. Amazon Bedrock (Claude 3 Haiku)
+- **Model**: `anthropic.claude-3-haiku-20240307-v1:0`
+- **Input**: Structured infrastructure data
+- **Output**: Executive summary with recommendations
+- **Cost**: ~$0.25 per 1M input tokens, $1.25 per 1M output tokens
+
+### 5. SNS (Simple Notification Service)
+- Topic: `infrastructure-audit-reports`
+- Subscriptions: Email addresses
+- Delivers daily audit reports
+
+## Data Flow
+
+![alt text](file:///c%3A/Users/stanl/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/EE236E128CF810F6D131E3935EB74AD60F2A1D26/transfers/2026-27/WhatsApp%20Image%202026-07-07%20at%2023.28.52.jpeg)
 
 ## Security Considerations
 
