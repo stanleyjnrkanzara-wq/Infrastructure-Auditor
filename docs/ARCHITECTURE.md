@@ -2,7 +2,7 @@
 
 ## System Diagram
 
-![alt text](<WhatsApp Image 2026-07-07 at 22.26.26-1.jpeg>)
+<img width="1408" height="768" alt="dr" src="https://github.com/user-attachments/assets/cf6f7737-04d8-48bb-afb5-0533ea598f1c" />
 
 
 ## Component Breakdown
@@ -56,7 +56,8 @@
 
 ## Data Flow
 
-![alt text](22222222222222222222222222222222222222222.jpeg)
+<img width="1408" height="768" alt="dr2" src="https://github.com/user-attachments/assets/6ccf7b16-e09b-4c86-adf2-09d049dded42" />
+
 
 
 ## Security Considerations
