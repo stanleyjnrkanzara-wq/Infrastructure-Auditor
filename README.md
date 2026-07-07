@@ -61,32 +61,59 @@ AI-Powered Cloud Infrastructure Security and Cost Auditor Using AWS Lambda, Bedr
 
 infrastructure-auditor/
 ├── manual-setup/              # Step-by-step AWS Console setup guide
+
 │   ├── SETUP_GUIDE.md        # Detailed manual setup instructions
+
 │   └── screenshots/          # Screenshots from manual setup (22+ images)
+
 │
+
 ├── terraform/                # Infrastructure-as-Code deployment
+
 │   ├── main.tf              # AWS resource definitions
+
 │   ├── variables.tf         # Input variables
+
 │   ├── outputs.tf           # Output values
+
 │   ├── terraform.tfvars     # Example variable values
+
 │   └── README.md            # Terraform deployment guide
+
 │
+
 ├── .github/
+
 │   └── workflows/           # GitHub Actions CI/CD
+
 │       └── deploy.yml       # Automated test & deploy pipeline
+
 │
+
 ├── docs/                    # Documentation
+
 │   ├── ARCHITECTURE.md      # System design & architecture overview
+
 │   ├── CI_CD.md            # GitHub Actions pipeline documentation
+
 │   └── INTERVIEW_GUIDE.md  # Talking points for recruiters
+
 │
+
 ├── lambda-code/             # Python Lambda function
+
 │   └── lambda_function.py  # Main audit script
+
 │
+
 ├── tests/                   # Unit tests
+
 │   └── test_lambda_function.py
+
 │
+
 ├── README.md               # This file
+
 └── .gitignore             # Git ignore file
 
 ##  Tech Stack
