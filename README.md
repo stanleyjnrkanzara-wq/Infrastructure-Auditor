@@ -30,6 +30,21 @@ AI-Powered Cloud Infrastructure Security and Cost Auditor Using AWS Lambda, Bedr
 
 ---
 
+## Architecture Diagram
+
+
+<img width="1408" height="768" alt="dr2" src="https://github.com/user-attachments/assets/6bbba0af-620b-42e2-9dc8-b201324ca409" />
+
+
+
+## Terraform Architecture Diagram
+
+
+<img width="1408" height="768" alt="WhatsApp Image 2026-07-08 at 03 02 23" src="https://github.com/user-attachments/assets/576596e8-007e-4f3e-b090-10ce561c5e08" />
+
+
+
+
 ## 📊 Quick Stats
 
 <p align="center">
