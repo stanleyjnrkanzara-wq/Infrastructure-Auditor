@@ -1,0 +1,6 @@
+## CI/CD PIPELINE WORKFLOW
+
+# GITHUB AUCTIONS
+
+
+![alt text](<Screenshot 2026-07-10 070731-1.png>)
